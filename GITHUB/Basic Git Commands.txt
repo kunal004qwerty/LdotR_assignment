@@ -1,0 +1,33 @@
+
+Question 01:->
+            Explain the steps and Git commands to initialize a repository, make a commit, and push the code to GitHub ?
+
+Answer:->
+            step_1 -> Create a GitHub Repository
+
+            step_2 -> initialize the repository
+                   -> open the teminal in your project directory
+                   -> git init
+
+            step_3 -> Add files to the staging area
+                   -> git add .
+
+            step_4  -> make a commit   
+                    -> git commit -m "commit comment"
+
+            step_5  -> Link your local repository to GitHub
+                    -> git remote add origin <repository-url>
+
+            step_6  -> push the code to GitHub
+                    -> git push -u origin master                            
+
+
+
+_______ summary ________
+
+git init
+git add
+git commit -m "comment"
+git remote add origin <repository-url>
+git push origin master
+

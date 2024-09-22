@@ -1,0 +1,27 @@
+Question 02:->
+            Describe a common branching strategy (such as GitFlow or feature branching) used in software development teams and how you would implement it for a new feature ?
+
+
+Answer:->
+
+        Main Branch (often called master or main)
+
+        step_1 :->  update your current branching
+                ->  git checkout main
+                ->  git pull origin main
+
+        step_2  -> Create a new branch
+                -> git checkout -b otherBranch   
+
+        step_3  -> commit the new feature
+                -> git add.
+                -> git commit -m "implement new feature"
+
+        step_4  -> push the feature branch to the remote repository
+                -> git push -u origin otherBranch
+           
+        step_5  -> Create a pull request (PR)   
+
+        step_6  -> pull the latest code after code review and merge
+                -> git pull origin main
+

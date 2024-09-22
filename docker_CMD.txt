@@ -1,0 +1,14 @@
+docker build . -t <username>/docker-ldotr_assignment
+docker compose up
+
+CTRL+c  "stop the container"
+
+docker compose down 
+
+docker ps "to check active container"
+
+docker ps -a "to check unactive container"
+
+docker rm CONTAINER_ID  "to delete the container"
+
+

@@ -1,0 +1,26 @@
+Question 03:->
+            Write a step-by-step guide to resolve a merge conflict when merging a feature branch into the main branch ?
+
+
+Answer:->
+        step_1  -> Switch To The Main Branch
+                -> git checkout main
+
+        step_2  -> Pull The Latest Changes
+                -> git pull origin main  
+
+        step_3  -> Merge The Feature Branch (ex-> otherBranch) Into main
+                -> git merge otherBranch              
+
+        step_4  -> Identify The Conflict
+                -> git status
+
+        step_5  -> Resolve The Conflicts
+
+        step_6  -> Mark the file as resolved
+                -> git add <file-name>
+
+        step_7  -> Continue the merge Process
+                -> git commit                        
+
+        step_8  -> git push origin main        

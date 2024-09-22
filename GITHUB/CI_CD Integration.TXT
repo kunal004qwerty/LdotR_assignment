@@ -1,0 +1,29 @@
+Question 04:->
+            Explain how to set up a basic CI/CD pipeline using GitHub Actions to automatically test and deploy a Node.js application when changes are pushed to the repository. ?
+
+
+Answer:->
+        step_1  ->  Pull from the main ( up-to-date you current branch )
+
+        step_2  ->  Create a github action workflow
+                    github action workflows stored in the .github/workflows
+
+                -> inside workflows folder Create a file anyName.yml 
+
+                -> define the workflow for testing
+
+                -> in project package.json write the "test" script that run automated tests
+
+        step_2  -> Add the deployment steps in your .yml file
+                
+                -> add your sensitive information to githubsecret
+
+        step_3  -> push the changes and trigger the workflow                 
+
+        Whenever code is pushed or a pull request is created trageting the main vranch, the pipeline will automatically trigger       
+
+        _______ summary ________
+
+        Testing: The pipeline installs dependencies and runs tests when code is pushed to the main branch or a pull request is made.
+
+        Deployment: If all tests pass, the code is automatically deployed to any cloud provider.

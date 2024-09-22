@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+
+  mongo_db:
+    container_name: database_container
+    image: mongo:latest
+    restart: always
+    volumes:
+      - mongo_db:/data/db
+    networks:
+      - LDOTR_network  
+
+  app:
+    build: .
+    ports:
+      - "3000:8000"
+    environment:
+      PORT: 8000
+      APP_NAME: LdotR_Assignment
+      MONGO_URL: mongodb://mongo_db/LdotR_Assignment    
+    depends_on:
+      - mongo_db  
+    networks:
+      - LDOTR_network  
+
+networks:
+  LDOTR_network:
+
+volumes:
+  mongo_db:
